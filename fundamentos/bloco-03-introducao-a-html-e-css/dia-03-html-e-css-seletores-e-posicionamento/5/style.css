@@ -1,0 +1,62 @@
+ol li {
+    background-color: #fbf664;
+}
+
+ol li:nth-of-type(2n) {
+    color: #227a12;
+}
+
+ol li:nth-of-type(2n+1) {
+    text-transform: uppercase;
+}
+
+h1,
+h3 {
+    color: #7a1913;
+}
+
+h1 em,
+h3 em {
+    font-size: 40px;
+    border: 1px black solid;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+ul li:nth-child(-n+3) {
+    color: #31367a;
+}
+
+.java {
+    background-color: #Fbb7ea;
+}
+
+.ajuda li a[href*="stackoverflow"]:hover {
+    color: #fa8d19;
+}
+
+.ajuda li a[href*="w3schools"]:hover {
+    color: #50c700;
+}
+
+.ajuda li a[href*="mozilla"]:hover {
+    color: #d900fa;
+}
+
+.ajuda li a[href*="devdocs"]:hover {
+    color: #ffc800;
+}
+
+.ajuda li a[href*="trybe"]:hover {
+    color: #0d7a2c;
+}
+
+.ajuda li a:hover {
+    font-weight: bold;
+}
