@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+    font-family: "IBM plex mono";
+    font-size: 20px;
+}
+
+header h1 {
+    background-color: #e46b2c;
+    padding: 45px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+nav {
+    background-color: #91b622;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li:hover {
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+    border-spacing: 10px;
+}
+
+p {
+    margin: 2% 10% 3% 10%
+}
+
+img {
+    width: 500px;
+}
+
+h2 {
+    background-color: #2ecac3;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.punch,
+.color {
+    background-color: white;
+}
+
+#reino,
+#melacostraca,
+#arthropoda,
+#subfilo,
+#subclasse,
+#stomatopoda {
+    background-color: #e46b2c;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#animalia,
+#filo,
+#crustacea,
+#classe,
+#hoplocarida,
+#ordem {
+    background-color: #91b622;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.punch {
+    display: inline-block;
+}
+
+.punch img {
+    float: left;
+}
+
+.punch p {
+    display: block;
+    margin-top: 150px;
+}
