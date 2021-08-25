@@ -37,7 +37,7 @@ table {
 }
 
 p {
-    margin: 2% 10% 3% 10%
+    margin: 2% 20% 3% 20%
 }
 
 img {
@@ -78,14 +78,35 @@ h2 {
 }
 
 .punch {
-    display: inline-block;
+    display: flex;
 }
 
-.punch img {
-    float: left;
+.foto2 {
+    margin-left: 250px;
 }
 
-.punch p {
-    display: block;
-    margin-top: 150px;
+.texto2 {
+    margin-top: 50px;
+}
+
+
+.color {
+    display: flex;
+}
+
+.foto1 {
+    margin-right: 250px;
+}
+
+.texto1 {
+    margin-top: 100px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    text-align: center;
 }
