@@ -21,11 +21,11 @@ if (currentHour >= 22) {
     console.log(message)
 }
 
-let weekDay = "quarta-feira";
+let weekDay = "sábado";
 
-if (weekDay === "segunda-feira" || "terça-feira" || "quarta-feira" || "quita-feira" || "sexta-feira") {
+if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quita-feira" || weekDay === "sexta-feira") {
     console.log("Oba, mais um dia de aprendizado na Trybe");
-} else if (weekDay === "sábado" || "domingo") {
+} else if (weekDay === "sábado" || weekDay === "domingo") {
     console.log("FINALMENTE, descanço merecido UwU");
 } else {
     console.log("Insira um valor válido");
