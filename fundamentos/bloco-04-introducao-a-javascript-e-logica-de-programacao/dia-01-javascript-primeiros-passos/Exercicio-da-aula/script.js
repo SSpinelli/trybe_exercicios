@@ -8,8 +8,4 @@ console.log(myName, birthCity, birthYear);
 
 console.log(birthYear);
 
- console.log(birthCity); // O erro ocorre pois a váriavel birthCity é uma constante e não pode receber novos valores.
-
-
-
-
+console.log(birthCity); // O erro ocorre pois a váriavel birthCity é uma constante e não pode receber novos valores.
