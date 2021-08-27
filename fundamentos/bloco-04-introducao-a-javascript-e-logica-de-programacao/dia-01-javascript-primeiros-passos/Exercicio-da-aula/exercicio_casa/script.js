@@ -157,7 +157,3 @@ if (baseSalary <= 1903.98) {
 let liquidSalary = baseSalary - aliquotIR;
 
 console.log(liquidSalary);
-
-
-
-
