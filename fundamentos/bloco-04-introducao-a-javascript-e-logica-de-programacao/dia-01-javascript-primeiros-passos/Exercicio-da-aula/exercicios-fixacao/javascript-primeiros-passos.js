@@ -161,7 +161,7 @@ if (costOfProduct >= 0 && saleValue >= 0) {
 let aliquotINSS;
 let aliquotIR;
 
-let grossSalary = 985;
+let grossSalary = 7800;
 
 if (grossSalary <= 1556.94) {
   aliquotINSS = grossSalary * 0.08;
