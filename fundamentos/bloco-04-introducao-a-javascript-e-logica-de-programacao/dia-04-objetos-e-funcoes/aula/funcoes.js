@@ -166,3 +166,32 @@ function profit (cost, valueOfSale, totalOfSale) {
   let totalProfit = profitPerSale * totalOfSale;
   return totalProfit;  
 }
+// Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+function baseSalary(salary) {
+  if (salary <= 1556.94) {
+    return salary * 0.92;
+  } else if (salary >= 1556.95 && salary <= 2594.92) {
+    return salary * 0.91;
+  } else if (salary >= 2594.93 && salary <= 5189.82) {
+    return salary * 0.89;
+  } else {
+    return salary - 570.88;
+  } 
+}
+function liquidSalary(baseSalary) {
+  if (baseSalary <= 1903.98) {
+    return baseSalary
+  } else if (baseSalary >= 1903.99 && baseSalary <= 2826.65) {
+    let irAliquot = (baseSalary * 0.075) - 142.80;
+    return baseSalary - irAliquot; 
+  } else if (baseSalary >= 2826.66 && baseSalary <= 3751.05) {
+    irAliquot = (baseSalary * 0.15) - 354.80;
+    return baseSalary - irAliquot;
+  } else if (baseSalary >= 3751.06 && baseSalary <= 4664.68) {
+    irAliquot = (baseSalary * 0.225) - 636.13
+    return baseSalary - irAliquot;
+  } else {
+    irAliquot = (baseSalary * 0.275) - 869.36
+    return baseSalary - irAliquot;
+  }
+}
