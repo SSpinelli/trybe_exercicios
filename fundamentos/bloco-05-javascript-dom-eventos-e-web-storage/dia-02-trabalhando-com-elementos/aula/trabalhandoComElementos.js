@@ -34,4 +34,3 @@ console.log(document.querySelector("#pai").lastElementChild.previousElementSibli
 // Crie um filho para primeiroFilhoDoFilho
 
 // A partir desse filho criado, acesse terceiroFilho
-
