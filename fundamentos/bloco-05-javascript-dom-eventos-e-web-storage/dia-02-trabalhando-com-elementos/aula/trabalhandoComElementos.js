@@ -14,23 +14,50 @@
 // Acesse o elemento elementoOndeVoceEsta;
 console.log(document.querySelector("#elementoOndeVoceEsta"));
 // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele;
-document.querySelector("#elementoOndeVoceEsta").parentNode.style.color = "#229977";
+console.log(document.querySelector('#elementoOndeVoceEsta').parentNode);
 // Acesse o primeiroFilhoDoFilho e adicione um texto a ele;
-document.querySelector("#primeiroFilhoDoFilho").innerText = "Uma cerveja antes do almoço é muito bom para ficar pensando melhor";
+document.querySelector('#primeiroFilhoDoFilho').innerText = "A melhor culinária é a italiana";
 // Acesse o primeiroFilho a partir de pai;
-console.log(document.querySelector("#pai").firstChild);
+console.log(document.querySelector('#pai').firstElementChild);
 // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta;
-console.log(document.querySelector("#elementoOndeVoceEsta").previousSibling);
+console.log(document.querySelector('#elementoOndeVoceEsta').previousElementSibling);
 // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta;
-console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling);
+console.log(document.querySelector('#elementoOndeVoceEsta').nextSibling);
 // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta;
-console.log(document.querySelector("#elementoOndeVoceEsta").nextElementSibling);
+console.log(document.querySelector('#elementoOndeVoceEsta').nextElementSibling);
 // Agora acesse o terceiroFilho a partir de pai;
-console.log(document.querySelector("#pai").lastElementChild.previousElementSibling);
+console.log(document.querySelector('#pai').lastElementChild.previousElementSibling);
 // Crie um irmão para elementoOndeVoceEsta;
-
+const pai = document.querySelector('#pai');
+const irmao = document.createElement('section');
+irmao.id = 'irmao';
+pai.appendChild(irmao);
+console.log(document.querySelector('#irmao'));
 // Crie um filho para elementoOndeVoceEsta
-
+const elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+const seuFilho = document.createElement('section');
+seuFilho.id = 'seuFilho';
+elementoOndeVoceEsta.appendChild(seuFilho);
+console.log(document.querySelector('#seuFilho'));
 // Crie um filho para primeiroFilhoDoFilho
-
+const primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+const filhoDoPrimeiroFilho = document.createElement('section');
+filhoDoPrimeiroFilho.id = 'filhoDoPrimeiroFilho';
+primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilho);
+console.log(document.querySelector('#filhoDoPrimeiroFilho'))
 // A partir desse filho criado, acesse terceiroFilho
+console.log(document.querySelector('#filhoDoPrimeiroFilho').parentElement.parentElement.nextElementSibling)
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho.
+const pai2 = document.getElementById('pai');
+for (let index = pai2.childNodes.length - 1; index >= 0; index -= 1) {
+  const currentChildren = pai2.childNodes[index];
+  if (currentChildren.id !== 'elementoOndeVoceEsta') {
+    currentChildren.remove();
+  }
+}
+document.getElementById('segundoEUltimoFilhoDoFilho').remove();
+document.getElementById('seuFilho').remove();
+document.getElementById('filhoDoPrimeiroFilho').remove();
+
+console.log(document.getElementById('paiDoPai'))
+
