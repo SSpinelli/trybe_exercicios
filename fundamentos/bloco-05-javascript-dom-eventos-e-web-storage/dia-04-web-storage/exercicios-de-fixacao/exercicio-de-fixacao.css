@@ -1,0 +1,54 @@
+h1 {
+	text-align: center;
+	font-family: monospace;
+	font-size: 55px;
+	color: #717675;
+	font-weight: 900;
+}
+
+h2 {
+	font-family: monospace;
+	font-size: 30px;
+	color: #717675;
+	font-weight: 900;
+}
+
+label {
+}
+
+.article p {
+	font-family: monospace;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.article-container {
+	display: block;
+	text-align: center;
+}
+
+.article {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	margin: 20px;
+}
+
+#user-input-menu {
+	display: block;
+	text-align: center;
+}
+
+.input-area {
+	display: inline-block;
+	margin: 15px;
+	font-size: 20px;
+	font-family: monospace;
+	padding: 5px;
+	color: #717675;
+}
+
+#lineHeight {
+	vertical-align: middle;
+	margin-top: 10px;
+}

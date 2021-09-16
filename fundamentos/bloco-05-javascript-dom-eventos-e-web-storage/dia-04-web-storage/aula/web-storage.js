@@ -1,5 +1,6 @@
 // Exemplos de utilização de local storage (os dados não são apagados quando a pessoa fecha a aba)
 // {
+
 console.log(localStorage.length);
 localStorage.setItem('firstName', 'João');
 localStorage.setItem('lastName', 'Spinelli');
@@ -10,7 +11,9 @@ console.log(localStorage.length);
 localStorage.clear();
 console.log(localStorage.length);
 }
-Exemplos de utilização de sessionStorage (os dados são apagados assim que a pessoa fecha a aba)
+
+// Exemplos de utilização de sessionStorage (os dados são apagados assim que a pessoa fecha a aba)
+
 {
 console.log(sessionStorage.length);
 sessionStorage.setItem('firstName', 'João');
@@ -22,12 +25,15 @@ console.log(sessionStorage.length);
 sessionStorage.clear();
 console.log(sessionStorage.length) 
 }
- É possível salvar outras estruturas em localStorage e sessionStorage;
+//  É possível salvar outras estruturas em localStorage e sessionStorage;
+
 let organization = {
   name: 'trybe',
   since: 2019
 }
- Objeto "storage" pode ser localStorage ou sessionStorage;
+
+//  Objeto "storage" pode ser localStorage ou sessionStorage
+
 localStorage.setItem('trybe', JSON.stringify(organization));
 let org = JSON.parse(localStorage.getItem('trybe'));
 console.log(org);
