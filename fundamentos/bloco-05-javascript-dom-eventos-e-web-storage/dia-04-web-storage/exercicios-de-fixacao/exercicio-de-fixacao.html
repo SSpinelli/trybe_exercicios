@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="exercicio-de-fixacao.css">
+  <title>Web Storage</title>
+</head>
+<body>
+  <header><h1>Jornal de Bordo</h1></header>
+  <main>
+    <section id="user-input-menu">
+
+      <label for="backgroundColor" class="input-area">Background Color</label>
+      <input type="color" name="backgroundColor" id="backgroundColor">
+
+      <label for="color" class="input-area">Font Color</label>
+      <input type="color" name="color" id="color">
+
+      <label for="fontSize" class="input-area">Font Size</label>
+      <input id="fontSize" class="input-area" type="number" placeholder="16" name="fontSize" min="11" max="35">
+
+      <label for="lineHeight" class="input-area">Line Height</label>
+      <input id="lineHeight" class="input-area" type="range" name="lineHeight" min="16" max="25" list="lineHeight" placeholder="18">
+      
+      <label for="fontFamily" class="input-area">Font Family</label>
+      <select name="fontFamily" class="input-area" id="fontFamily">
+        <option value="Monospace">Monospace</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+      </select>
+      
+      <button id="btn" class="input-area" type="submit" name="btn">Submit</button>
+
+    </section>
+    <section class="article-container">
+      <div class="article"> 
+        <h2>Artigo 01</h2> 
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 02</h2>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 03</h2>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 04</h2> 
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 05</h2>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 06</h2>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 04</h2> 
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 05</h2>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+      <div class="article">
+        <h2>Artigo 06</h2>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor neque vel est mattis, id dignissim purus malesuada. In vestibulum commodo massa, at suscipit mauris faucibus vel. Fusce nec sollicitudin nisi. In quis est ullamcorper eros ultricies aliquet vel vitae erat. In interdum, nulla nec blandit porttitor, purus odio posuere lacus, eu fringilla mi sapien ac ipsum. Phasellus vel efficitur risus. Praesent ornare quam massa, quis ultrices enim tincidunt non. Aliquam volutpat porta faucibus. Maecenas cursus, velit quis dapibus cursus, odio erat dapibus ex, sed tristique nisl mauris non nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut efficitur justo magna. Sed nec pharetra eros. Mauris consequat metus elit, non fermentum arcu convallis eget. Mauris facilisis fringilla eros ac tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam dictum est at leo fringilla pretium.
+        </P>
+      </div>
+    </section>
+  </main>
+  <script src="exercicio-de-fixacao.js"></script>
+</body>
+</html>
