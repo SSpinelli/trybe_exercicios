@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Exercício de fixação forms</title>
+	</head>
+	<body>
+		<form id="cv-form" method="GET">
+			<fieldset>
+				<label for="nome-completo">
+					Nome completo
+					<input
+						type="text"
+						name="nome"
+						id="nome-completo"
+						placeholder="digite aqui"
+						required
+						maxlength="40"
+					/>
+				</label>
+				<label for="e-mail">
+					E-mail
+					<input
+						type="email"
+						id="e-mail"
+						name="email"
+						placeholder="digite seu melhor e-mail"
+						maxlength="50"
+						required
+					/> </label
+				><label for="documento-cpf">
+					CPF
+					<input
+						type="text"
+						id="documento-cpf"
+						name="cpf"
+						placeholder="000.000.000-00"
+						required
+						maxlength="14"
+					/>
+				</label>
+				<label for="user-adress">
+					Endereço
+					<input
+						type="text"
+						id="user-adress"
+						name="adress"
+						required
+						maxlength="200"
+						placeholder="rua, número e complemento"
+					/>
+				</label>
+				<label for="user-city">
+					Cidade
+					<input
+						type="text"
+						required
+						id="user-city"
+						name="city"
+						maxlength="28"
+						placeholder="nome da sua cidade"
+					/>
+				</label>
+				<label for="user-state">
+					Estado
+					<select name="estados" id="user-state" required></select>
+				</label>
+				<label for="user-home">
+					Tipo de moradia
+					<input type="radio" name="user-home" id="house" required /> Casa
+					<input type="radio" name="user-home" id="apt" required /> Apartamento
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for="curriculum">
+					Escreva aqui um resumo do seu currículo
+					<textarea
+						name="curriculum"
+						id="curriculum"
+						cols="30"
+						rows="10"
+						maxlength="1000"
+						required
+					></textarea>
+				</label>
+				<label for="job">
+					Cargo
+					<input type="text" required id="job" name="job" maxlength="40" />
+				</label>
+				<label for="about-job">
+					Especificações do cargo
+					<input
+						type="text"
+						required
+						id="about-job"
+						name="about-job"
+						maxlength="500"
+					/>
+				</label>
+				<label for="job-date">
+					Data de início do trabalho
+					<input type="date" required id="job-date" name="job-date" min />
+				</label>
+			</fieldset>
+			<div id="buttons">
+				<button type="submit" class="submit-button">Enviar currículo</button>
+				<button type="button" class="clear-button">Apagar informação</button>
+			</div>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
