@@ -35,7 +35,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Frank Herbert',
-      birthYear: 1920,
+      birthYear: 1925,
     },
     releaseYear: 1965,
   },
@@ -66,14 +66,9 @@ const books = [
 const expectedResult = false;
 
 function authorUnique(books) {
-  let currentAuthorYear = books[0].author.birthYear;
-  let count = 0;
-
-  for (let index = 1; index < books.length; index += 1) {
-    let authorYear = books[index].author.birthYear;
-    currentAuthorYear === authorYear ? count += 1 : currentAuthorYear = authorYear;
-  }
-  return count === 0 ? true : false;
+  return books.every(book => 
+    !books.some(someBook => 
+     (book.author.name !== someBook.author.name) && (book.author.birthYear === someBook.author.birthYear)))
 }
 
-authorUnique(books)
+console.log(authorUnique(books));

@@ -8,4 +8,3 @@ const joaoSpinelli = {
 
 const x = (object, key, value) => object[key] = value;
 x(joaoSpinelli, 'Sabe falar inglês?', true);
-
