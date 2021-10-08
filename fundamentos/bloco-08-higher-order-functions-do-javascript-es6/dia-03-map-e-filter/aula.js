@@ -9,5 +9,5 @@ const productsWithPrice = (arrayOfProducts, arrayOfPrices) => {
   })
   return result;
 }
-
+//
 console.log(productsWithPrice(products, prices))
