@@ -7,7 +7,7 @@ class PokemonCard extends React.Component {
       <div>
         <h2>{ name }</h2>
         <h4>{ type }</h4>
-        <h4>{ averageWeight.value }</h4>
+        <h4> { `${averageWeight.value} ${averageWeight.measurementUnit}` } </h4>
         <img src={ image } alt={ name } />
       </div>
     )

@@ -4,8 +4,8 @@ import Pokemon from './Pokemon';
 function App() {
   return (
     <>
-    <h1>My Pokedex</h1>
-    <Pokemon />
+      <h1>My Pokedex</h1>
+      <Pokemon />
     </>
   );
 }
